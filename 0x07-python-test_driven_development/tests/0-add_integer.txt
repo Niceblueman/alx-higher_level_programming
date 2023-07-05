@@ -1,0 +1,12 @@
+>>> add_integer(1, 2)
+3
+>>> add_integer(100, -2)
+98
+>>> add_integer(100.3, -2)
+100
+>>> add_integer(4, "School")
+98
+>>> add_integer(None)
+b must be an integer
+>>> add_integer(4, "School")
+a must be an integer
