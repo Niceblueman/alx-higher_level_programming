@@ -54,7 +54,5 @@ try:
 
     print_info()
 except KeyboardInterrupt:
-    """_summary_
-    """
     print_info()
     raise
