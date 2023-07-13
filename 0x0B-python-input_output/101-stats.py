@@ -7,8 +7,6 @@ import sys
 
 
 def print_info():
-    """_summary_
-    """
     print('File size: {:d}'.format(file_size))
 
     for scode, code_times in sorted(status_codes.items()):
