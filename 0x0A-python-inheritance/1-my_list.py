@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-    1-my_list: class MyList
+"""_summary_
 """
 
 
