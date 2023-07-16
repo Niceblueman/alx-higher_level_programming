@@ -1,11 +1,8 @@
 #!/usr/local/python3
 """_summary_"""
 
-
 import json
 import csv
-from models.rectangle import Rectangle
-from models.square import Square
 
 
 class Base:
