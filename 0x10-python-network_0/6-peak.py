@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Find a peak in unsorted list[int]"""
 
+
 def find_peak(lst_of_integers):
     """Find a peak in list[int]"""
 
