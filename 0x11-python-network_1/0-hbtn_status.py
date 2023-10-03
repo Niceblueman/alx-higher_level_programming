@@ -1,24 +1,21 @@
 #!/usr/bin/python3
-"""Description: This Python script sends an HTTP GET request to a specified URL
-and prints information about the response content.
+"""Description: This Python script sends an HTTP GET request to a specific URL
+(https://alx-intranet.hbtn.io/status), retrieves the response content, and prints
+information about the content.
 
 Parameters:
-    - URL (str): The URL to send the GET request to.
+    This script does not accept any command-line parameters.
 
 Usage:
-    Run this script by providing the URL as a command-line argument. For example:
-    $ python3 script.py https://alx-intranet.hbtn.io/status
+    Simply run this script, and it will perform an HTTP GET request to the URL
+    'https://alx-intranet.hbtn.io/status' and display information about the response.
 """
 
 if __name__ == '__main__':
     import urllib.request
-    import sys
-    if len(sys.argv) != 2:
-        print("Usage: python3 script.py <URL>")
-        sys.exit(1)
-    url = sys.argv[1]
+
     try:
-        with urllib.request.urlopen(url) as res:
+        with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
             content = res.read()
             print("Body response:")
             print("\t- type: {}".format(type(content)))
