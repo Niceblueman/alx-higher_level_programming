@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""solution"""
-
-
+"""Get Github user id using api.
+Usage: ./10-my_github.py <username> <password>
+  - Uses Basic Authentication to access the ID.
+"""
 import sys
 import requests
 from requests.auth import HTTPBasicAuth

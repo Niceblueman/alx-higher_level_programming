@@ -13,7 +13,7 @@ Usage:
 
 if __name__ == '__main__':
     import urllib.request
-
+    url = 'https://alx-intranet.hbtn.io/status'
     try:
         with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
             content = res.read()

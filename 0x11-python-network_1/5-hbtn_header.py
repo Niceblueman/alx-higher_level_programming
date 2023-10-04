@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""solution"""
-
-
+"""Get X-Request-Id header key value from request.
+Usage: ./5-hbtn_header.py <URL>
+"""
 import sys
 import requests
 

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""solution"""
-
-
+"""Get 10 lest commit from Github api.
+Usage: ./100-github_commits.py <repository name> <repository owner>
+"""
 import sys
 import requests
 

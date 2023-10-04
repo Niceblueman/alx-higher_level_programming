@@ -1,12 +1,17 @@
 #!/usr/bin/python3
-"""solution"""
+"""Return error code from request.
+Usage: ./3-error_code.py <URL>
+"""
+import sys
+import urllib.error
+import urllib.request
+
 
 if __name__ == "__main__":
-    import sys
-    from urllib import request, error
-
+    url = sys.argv[1]
+    req = urllib.request.Request(url)
     try:
-        with request.urlopen(sys.argv[1]) as res:
-            print(res.read().decode('UTF-8'))
-    except error.HTTPError as er:
-        print('Error code:', er.code)
+        with urllib.request.urlopen(req) as response:
+            print(response.read().decode("ascii"))
+    except urllib.error.HTTPError as e:
+        print("Error code: {}".format(e.code))
